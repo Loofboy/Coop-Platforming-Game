@@ -28,7 +28,7 @@ public class UIScript : MonoBehaviour
 	public void StartHost() {
 		NetworkManager.Singleton.StartHost();
 		GetLocalIPAddress();
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
 	}
 
 	// To Join a game
@@ -36,7 +36,7 @@ public class UIScript : MonoBehaviour
 		ipAddress = ip.text;
 		SetIpAddress();
 		NetworkManager.Singleton.StartClient();
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
     }
 
 	/* Gets the Ip Address of your connected network and
